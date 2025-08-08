@@ -228,7 +228,20 @@
         gap: 10px;
     }
 }
+        .resume-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
 
+.resume-button:hover {
+    background-color: #0b5ed7; /* darker blue on hover */
+}
 
     </style>
 </head>
@@ -255,6 +268,7 @@
 
         <section id="about">
             <h2>About Me</h2>
+            <a href="Resume.pdf" download class="resume-button">📄 Download Resume</a>
             <div class="about-container">
             <img src="me.jpg" alt="Pranali Shinde" class="about-img">
             <p> Results-driven Data Analyst with an engineering background in Electronics & Telecommunication.
