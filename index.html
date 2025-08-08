@@ -145,6 +145,44 @@
             padding: 5px;
             border-radius: 20px;
         }
+        /* === PROJECTS SECTION === */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .project-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-card h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: white;
+            background: var(--primary-color);
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        
+        .project-card a:hover {
+            background: var(--secondary-color);
+        }
 
     </style>
 </head>
@@ -184,7 +222,7 @@ Experienced in Exploratory data analysis and communicating data-driven solutions
     <div class="skill">
         <span>Python (Pandas, NumPy)</span>
         <div class="skill-bar">
-            <div class="skill-fill" style="width: 90%;">80%</div>
+            <div class="skill-fill" style="width: 90%;">75%</div>
         </div>
     </div>
 
@@ -230,13 +268,34 @@ Experienced in Exploratory data analysis and communicating data-driven solutions
         </div>
     </div>
 </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Project details will go here.</p>
-        </section>
+       
 
         <section id="contact">
-            <h2>Contact</h2>
+            <h2>Contact<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+
+        <div class="project-card">
+            <h3>Sales Data Analysis</h3>
+            <p>Analyzed sales data using Python (Pandas, Matplotlib) to identify trends and insights. Automated report generation for monthly summaries.</p>
+            <a href="https://github.com/PranaliShinde/Sales-Data-Analysis" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Customer Segmentation Dashboard</h3>
+            <p>Built an interactive Tableau dashboard to visualize customer groups based on purchasing patterns and demographics.</p>
+            <a href="https://public.tableau.com/your_dashboard_link" target="_blank">View Dashboard</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Excel EDA Report</h3>
+            <p>Performed Exploratory Data Analysis in Excel, created pivot tables and charts to summarize KPIs for business review.</p>
+            <a href="https://github.com/PranaliShinde/Excel-EDA" target="_blank">View on GitHub</a>
+        </div>
+
+    </div>
+</section>
+</h2>
             <p>Your email or contact form link.</p>
         </section>
     </main>
